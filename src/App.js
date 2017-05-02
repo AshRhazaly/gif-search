@@ -21,11 +21,12 @@ export default class App extends Component {
       })
       // in the event the api server goes down or any errors where no data object is returned
       .catch(error=>{
-        console.log('Error fetching data');
+        console.log('Error fetching data', error);
       });
   }
 
   render() {
+    console.log(this.state.gifs);
     return (
       <div>
         <div className="main-header">
