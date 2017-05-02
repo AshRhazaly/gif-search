@@ -12,6 +12,11 @@ export default class App extends Component {
     };
   }
 
+  componentDidMount() {
+    fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
+    // pass in the URL of the api and token if necessary for data you need to retrieve
+  }
+
   render() {
     return (
       <div>
